@@ -57,9 +57,9 @@ SetDEPOptOut                    # SetDEPOptIn
 
 ### Network Tweaks ###
 SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
-# SetUnknownNetworksPrivate     # SetUnknownNetworksPublic
+SetUnknownNetworksPrivate       # SetUnknownNetworksPublic
 # DisableNetDevicesAutoInst     # EnableNetDevicesAutoInst
-# DisableHomeGroups             # EnableHomeGroups
+DisableHomeGroups               # EnableHomeGroups
 # DisableSMB1                   # EnableSMB1
 # DisableSMBServer              # EnableSMBServer
 # DisableNetBIOS                # EnableNetBIOS
@@ -69,7 +69,7 @@ SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
 # DisableMSNetClient            # EnableMSNetClient
 # DisableQoS                    # EnableQoS
 # DisableIPv4                   # EnableIPv4
-# DisableIPv6                   # EnableIPv6
+DisableIPv6                     # EnableIPv6
 # DisableNCSIProbe              # EnableNCSIProbe
 # DisableConnectionSharing      # EnableConnectionSharing
 DisableRemoteAssistance         # EnableRemoteAssistance
@@ -91,7 +91,7 @@ DisableAutorun                  # EnableAutorun
 # EnableStorageSense            # DisableStorageSense
 # DisableDefragmentation        # EnableDefragmentation
 # DisableSuperfetch             # EnableSuperfetch
-# DisableIndexing               # EnableIndexing
+DisableIndexing                 # EnableIndexing
 # DisableSwapFile               # EnableSwapFile
 # DisableRecycleBin             # EnableRecycleBin
 EnableNTFSLongPaths             # DisableNTFSLongPaths
@@ -110,24 +110,24 @@ DisableLockScreen               # EnableLockScreen
 HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
 HideShutdownFromLockScreen      # ShowShutdownOnLockScreen
 DisableLockScreenBlur           # EnableLockScreenBlur
-# DisableAeroShake              # EnableAeroShake
+DisableAeroShake                # EnableAeroShake
 DisableAccessibilityKeys        # EnableAccessibilityKeys
 ShowTaskManagerDetails          # HideTaskManagerDetails
 ShowFileOperationsDetails       # HideFileOperationsDetails
 # EnableFileDeleteConfirm       # DisableFileDeleteConfirm
-HideTaskbarSearch               # ShowTaskbarSearchIcon         # ShowTaskbarSearchBox
-HideTaskView                    # ShowTaskView
-ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
-SetTaskbarCombineWhenFull       # SetTaskbarCombineNever        # SetTaskbarCombineAlways
+ShowTaskbarSearchIcon           # HideTaskbarSearch # ShowTaskbarSearchBox
+ShowTaskView                    # HideTaskView
+ShowLargeTaskbarIcons           # ShowSmallTaskbarIcons
+SetTaskbarCombineNever          # SetTaskbarCombineWhenFull # SetTaskbarCombineAlways
 HideTaskbarPeopleIcon           # ShowTaskbarPeopleIcon
 ShowTrayIcons                   # HideTrayIcons
-# ShowSecondsInTaskbar          # HideSecondsFromTaskbar
+ShowSecondsInTaskbar            # HideSecondsFromTaskbar
 DisableSearchAppInStore         # EnableSearchAppInStore
 DisableNewAppPrompt             # EnableNewAppPrompt
-# HideRecentlyAddedApps         # ShowRecentlyAddedApps
-# HideMostUsedApps              # ShowMostUsedApps
+HideRecentlyAddedApps           # ShowRecentlyAddedApps
+HideMostUsedApps                # ShowMostUsedApps
 # SetWinXMenuPowerShell         # SetWinXMenuCmd
-# SetControlPanelSmallIcons     # SetControlPanelLargeIcons     # SetControlPanelCategories
+SetControlPanelSmallIcons       # SetControlPanelLargeIcons     # SetControlPanelCategories
 DisableShortcutInName           # EnableShortcutInName
 # HideShortcutArrow             # ShowShortcutArrow
 SetVisualFXPerformance          # SetVisualFXAppearance
@@ -135,12 +135,12 @@ SetVisualFXPerformance          # SetVisualFXAppearance
 # SetAppsDarkMode               # SetAppsLightMode
 # SetSystemLightMode            # SetSystemDarkMode
 # AddENKeyboard                 # RemoveENKeyboard
-# EnableNumlock                 # DisableNumlock
+EnableNumlock                   # DisableNumlock
 # DisableEnhPointerPrecision    # EnableEnhPointerPrecision
-# SetSoundSchemeNone            # SetSoundSchemeDefault
-# DisableStartupSound           # EnableStartupSound
+SetSoundSchemeNone              # SetSoundSchemeDefault
+DisableStartupSound             # EnableStartupSound
 # DisableChangingSoundScheme    # EnableChangingSoundScheme
-# EnableVerboseStatus           # DisableVerboseStatus
+# DisableVerboseStatus          # EnableVerboseStatus
 DisableF1HelpKey                # EnableF1HelpKey
 
 ### Explorer UI Tweaks ###
@@ -168,17 +168,17 @@ ShowThisPCOnDesktop             # HideThisPCFromDesktop
 # ShowNetworkOnDesktop          # HideNetworkFromDesktop
 # HideDesktopIcons              # ShowDesktopIcons
 # ShowBuildNumberOnDesktop      # HideBuildNumberFromDesktop
-HideDesktopFromThisPC           # ShowDesktopInThisPC
+# HideDesktopFromThisPC         # ShowDesktopInThisPC
 # HideDesktopFromExplorer       # ShowDesktopInExplorer
-HideDocumentsFromThisPC         # ShowDocumentsInThisPC
+# HideDocumentsFromThisPC       # ShowDocumentsInThisPC
 # HideDocumentsFromExplorer     # ShowDocumentsInExplorer
-HideDownloadsFromThisPC         # ShowDownloadsInThisPC
+# HideDownloadsFromThisPC       # ShowDownloadsInThisPC
 # HideDownloadsFromExplorer     # ShowDownloadsInExplorer
-HideMusicFromThisPC             # ShowMusicInThisPC
+# HideMusicFromThisPC           # ShowMusicInThisPC
 # HideMusicFromExplorer         # ShowMusicInExplorer
-HidePicturesFromThisPC          # ShowPicturesInThisPC
+# HidePicturesFromThisPC        # ShowPicturesInThisPC
 # HidePicturesFromExplorer      # ShowPicturesInExplorer
-HideVideosFromThisPC            # ShowVideosInThisPC
+# HideVideosFromThisPC          # ShowVideosInThisPC
 # HideVideosFromExplorer        # ShowVideosInExplorer
 Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
 # Hide3DObjectsFromExplorer     # Show3DObjectsInExplorer
@@ -204,14 +204,14 @@ DisableIEFirstRun               # EnableIEFirstRun
 DisableFirstLogonAnimation      # EnableFirstLogonAnimation
 DisableMediaSharing             # EnableMediaSharing
 # EnableDeveloperMode           # DisableDeveloperMode
-# UninstallMediaPlayer          # InstallMediaPlayer
-# UninstallInternetExplorer     # InstallInternetExplorer
+UninstallMediaPlayer            # InstallMediaPlayer
+UninstallInternetExplorer       # InstallInternetExplorer
 # UninstallWorkFolders          # InstallWorkFolders
 # UninstallHelloFace            # InstallHelloFace
 # UninstallMathRecognizer       # InstallMathRecognizer
 # UninstallPowerShellV2         # InstallPowerShellV2
 # UninstallPowerShellISE        # InstallPowerShellISE
-# InstallLinuxSubsystem         # UninstallLinuxSubsystem
+InstallLinuxSubsystem           # UninstallLinuxSubsystem
 # InstallHyperV                 # UninstallHyperV
 # UninstallSSHClient            # InstallSSHClient
 # InstallSSHServer              # UninstallSSHServer
